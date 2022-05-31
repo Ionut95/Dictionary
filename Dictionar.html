@@ -25,7 +25,7 @@
             <div>
               Cauta un cuvant!
             </div>
-              <input type="text" id="searching" value=""> <button class="btn btn-secondary" onclick="wordSearching();">Cauta</button>
+            <input type="text" id="searching" value=""> <button class="btn btn-secondary" onclick="wordSearching();">Cauta</button>
             <div class="card-body">
               <p id="result"></p>
             </div>
@@ -33,18 +33,5 @@
         </div>
       </div>
     </div>
-    <script>
-      let dict = [];
-      function addWord() {
-        dict.push(document.getElementById("myText").value);
-      }
-      function wordSearching() {
-        var searchedWord = document.getElementById("searching").value;
-        if (dict.indexOf(searchedWord) >= 0) {
-          return document.getElementById("result").innerHTML = "Cuvantul e in dictionar";
-        }
-        return document.getElementById("result").innerHTML = "Cuvantul nu e in dictionar";
-      }
-    </script>
   </body>
 </html>
